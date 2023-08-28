@@ -1,0 +1,151 @@
+@font-face {
+    font-family: coolvetica;
+    src: url('../assets/coolvetica.rg-regular.otf') format('truetype');
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.hero-text{
+    margin: 200px 80px 0px 80px;
+    font-family: coolvetica;
+    color: white;
+    font-size: 80px;
+    position: relative;
+    width: 40%;
+    pointer-events: none;
+}
+
+
+
+.hero-text::before{
+    content: "<h1>";
+    color: #515152;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+}
+.hero-text::after{
+    content: "</h1>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    left: -25px;
+}
+
+.y{
+    font-family: coolvetica;
+    color: #05FDD8;
+    font-size: 100px;
+    position: relative;
+    pointer-events: none;
+}
+.y::after{
+    content: 'Y';
+    position: absolute;
+    top: 0;
+    left: 4px;
+    color: #FD2155;
+}
+
+.gray-text{
+    color: #8d8d8d;
+    margin: 60px 80px;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    position: relative;
+    font-family: "poppins";
+    pointer-events: none;
+}
+
+.gray-text::before{
+    content: "<p>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    left: -25px;
+    top: -30px;
+}
+
+.gray-text::after{
+    content: "</p>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    left: -25px;
+    top: 23px;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .hero-text{
+      
+      width: 100%;
+      font-size:50px ;
+  }
+  .gray-text{
+    font-size: 15px;
+  }
+}
+
+
+
+/* BUTTON CONTACT ME */
+
+
+.btn {
+    margin: 0px 80px;
+    font-size: 15px;
+    color: #05FDD8;
+    border: 1px solid #05FDD8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    letter-spacing: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 200px;
+    transition: 1s ease-out;
+  }
+  .btn span {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 10;
+  }
+  .btn:before, .btn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .btn:before {
+    transform: translate3d(-100%, 0, 0);
+    background-color: white;
+    border: 1px solid white;
+    transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .btn:after {
+    background-color: #05FDD8;
+    border: 1px solid #05FDD8;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 300ms 300ms cubic-bezier(0.16, 0.73, 0.58, 0.62);
+  }
+  .btn:hover:before {
+    transform: translate3d(0, 0, 0);
+  }
+  .btn:hover:after {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .btn:hover{
+    color: black;
+  }

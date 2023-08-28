@@ -1,0 +1,152 @@
+
+@font-face {
+    font-family: 'La Belle Aurore Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('La Belle Aurore Regular'), url('LaBelleAurore.woff') format('woff');
+    }
+
+
+.skills-hero{
+    width: calc(100% - 130px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 100vh;
+    margin-top: 15px;
+   
+}
+
+
+.code{
+    font-family: 'La Belle Aurore Regular';
+    color: #515152;
+    font-size: 22px;
+    margin:40px;
+    position: relative;
+}
+
+.code::after{
+    content: "<body>";
+    color: #515152;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.sections{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 220px 0px;
+}
+@media only screen and (max-width: 720px) {
+    .skills-hero{
+        width: 100%;
+        position: absolute;
+        right: 0;
+        min-height: 100vh;
+    }
+    .sections{
+        flex-direction: column;
+    }
+}
+.details{
+    width: 50%;
+    height: 100%;
+    margin: 0px 80px;
+}
+
+.details h1{
+    color: #05FDD8;
+    font-size: 65px;
+    position: relative;
+}
+
+
+
+.details h1::before{
+    content: "<h1>";
+    color: #515152;
+    position: absolute;
+    top: -40px;
+    left: -25px;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+}
+.details h1::after{
+    content: "</h1>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    left: -25px;
+    bottom: -50px;
+}
+
+.details h1{
+    line-height: 110%;
+}
+
+.skills h1{
+    margin: 50px;
+}
+
+.skills{
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-family: 'La Belle Aurore Regular';
+}
+
+.skills
+{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+.skill{
+    margin-bottom: 20px;
+}
+
+.skill p{
+    margin-bottom: 13px;
+}
+
+.bar{
+    height: 2px;
+    width: 90%;
+    background: rgb(77, 77, 77);
+    position: relative;
+}
+
+.bar-progress-front{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: #05FDD8;
+}
+
+.bar-progress-back{
+    position: absolute;
+    width: 76%;
+    height: 100%;
+    background: #FD2155;
+}
+
+
+.bar-progress-react{
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background: #ff5adb;
+}
+
+.bar-progress-ui{
+    position: absolute;
+    width: 84%;
+    height: 100%;
+    background: #F6D68D;
+}
