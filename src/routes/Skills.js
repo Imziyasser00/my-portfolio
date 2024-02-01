@@ -3,12 +3,15 @@ import Navbar from '../components/Navbar'
 import SkillsSection from '../components/SkillsSection'
 import './Skills.css'
 
+
 const Skills = () => {
   return (
-    <div>
+    <div className="App">
         <Navbar />
         <SkillsSection />
     </div>
+    
+
   )
 }
 

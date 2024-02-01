@@ -56,6 +56,46 @@ Experience</h1>
             className="bar-progress-ui"></motion.div>
           </div>
         </div>
+        <div className="skill">
+          <p>Java</p>
+          <div className="bar">
+            <motion.div
+            initial={{width:0}}
+            animate={{width:'75%'}}
+            transition={{delay:1.8,duration:1}}
+            className="bar-progress-java" ></motion.div>
+          </div>
+        </div>
+        <div className="skill">
+          <p>PHP</p>
+          <div className="bar">
+            <motion.div
+            initial={{width:0}}
+            animate={{width:'86%'}}
+            transition={{delay:2,duration:1}}
+            className="bar-progress-php" ></motion.div>
+          </div>
+        </div>
+        <div className="skill">
+          <p>C</p>
+          <div className="bar">
+            <motion.div
+            initial={{width:0}}
+            animate={{width:'69%'}}
+            transition={{delay:2.2,duration:1}}
+            className="bar-progress-c" ></motion.div>
+          </div>
+        </div>
+        <div className="skill">
+          <p>C++</p>
+          <div className="bar">
+            <motion.div
+            initial={{width:0}}
+            animate={{width:'81%'}}
+            transition={{delay:2.4,duration:1}}
+            className="bar-progress-cpp" ></motion.div>
+          </div>
+        </div>
       </div>
     </motion.div>
 
