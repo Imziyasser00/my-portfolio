@@ -180,3 +180,37 @@
     background: #ffffff;
 }
 
+
+.skills-paragraph{
+    color: #8d8d8d;
+    margin-top: 90px;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    position: relative;
+    font-family: "poppins";
+    pointer-events: none;
+}
+
+
+.skills-paragraph::before{
+    content: "<p>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    top: -40px;
+    left: -25px;
+}
+
+
+
+.skills-paragraph::after{
+    content: "</p>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    left: -25px;
+    bottom: -50px;
+}
+

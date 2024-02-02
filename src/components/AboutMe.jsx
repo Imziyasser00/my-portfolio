@@ -1,77 +1,114 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import React from "react";
+import "./AboutMe.css";
+import { motion, useAnimation } from "framer-motion";
+const AboutMe = () => {
+  const controls = useAnimation();
 
-import CanvasLoader from "./Loader";
+  const handleScroll = () => {
+    // Adjust the scroll position where you want the fade-out effect to start
+    const scrollY = window.scrollY;
 
-const AboutMe = ({ isMobile }) => {
-  const computer = useGLTF("./astronaut/scene.gltf");
+    // Adjust the threshold based on your preference
+    const fadeOutThreshold = 200;
 
-  return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <pointLight intensity={1} />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
-  );
-};
+    if (scrollY > fadeOutThreshold) {
+      controls.start({ opacity: 0 });
+    } else {
+      controls.start({ opacity: 1 });
+    }
+  };
 
-const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
+  // Add event listener for scroll
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <AboutMe isMobile={isMobile} />
-      </Suspense>
+  const text =
+    "Hey! 👋 I'm Yassir, a Computer Science student at Bordeaux University. Passionate about web development and exploring cloud tech, I code in Java, C++, and more, with an eye on mastering the MERN Stack and TypeScript. 💻🌐.".split(
+      " "
+    );
 
-      <Preload all />
-    </Canvas>
+  return (
+    <div className="skills-hero">
+      <span className="code">&lt;html&gt;</span>
+      <motion.div
+        className="sections"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+      >
+        <div className="details">
+          <motion.h1>About Me </motion.h1>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.9, delay: 0.6 }}
+          >
+            <motion.p className="skills-paragraph">
+              {text.map((el, i) => (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.25,
+                    delay: i / 10,
+                  }}
+                  key={i}
+                >
+                  {el}{" "}
+                </motion.span>
+              ))}
+            </motion.p>
+            
+          </motion.div>
+        </div>
+        <div className="skills">
+              <div className="skill">
+                <p>Front-End</p>
+                
+              </div>
+             
+              
+              
+              <div className="skill">
+                <p>PHP</p>
+                <div className="bar">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "86%" }}
+                    transition={{ delay: 2, duration: 1 }}
+                    className="bar-progress-php"
+                  ></motion.div>
+                </div>
+              </div>
+              <div className="skill">
+                <p>C</p>
+                <div className="bar">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "69%" }}
+                    transition={{ delay: 2.2, duration: 1 }}
+                    className="bar-progress-c"
+                  ></motion.div>
+                </div>
+              </div>
+              <div className="skill">
+                <p>C++</p>
+                <div className="bar">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "81%" }}
+                    transition={{ delay: 2.4, duration: 1 }}
+                    className="bar-progress-cpp"
+                  ></motion.div>
+                </div>
+              </div>
+            </div>
+      </motion.div>
+    </div>
   );
 };
 
