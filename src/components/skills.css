@@ -214,3 +214,33 @@
     bottom: -50px;
 }
 
+@media only screen and (max-width: 720px) {
+    .skills-hero{
+        width: 100%;
+        position: absolute;
+        right: 0;
+        min-height: 100vh;
+    }
+    .sections{
+        flex-direction: column;
+        margin-top: 160px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .details{
+        margin: auto 70px;
+    }
+    .details h1{
+        font-size: 48px;
+    }
+    .skills-paragraph{
+        width: 75vw;
+    }
+    .skills-paragraph span{
+        font-size: 18px;
+    }
+    .skills{
+        margin: 90px 60px;
+        width: 80vw;
+    }
+}

@@ -4,6 +4,7 @@ const Work = () => {
   return (
     <div>
       <Navbar />
+      <Work />
     </div>
   )
 }

@@ -1,241 +1,253 @@
-
 @font-face {
-    font-family: 'La Belle Aurore Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('La Belle Aurore Regular'), url('LaBelleAurore.woff') format('woff');
-    }
+  font-family: "La Belle Aurore Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("La Belle Aurore Regular"),
+    url("LaBelleAurore.woff") format("woff");
+}
 
+.bt-hero {
+  width: calc(100% - 130px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0px;
+}
 
-.bt-hero{
-    width: calc(100% - 130px);
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 0px;
-   
+.code {
+  font-family: "La Belle Aurore Regular";
+  color: #515152;
+  font-size: 22px;
+  margin: 40px;
+  position: relative;
+}
+
+.code::after {
+  content: "<body>";
+  color: #515152;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.sections-abt {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 100px 0px;
+}
+
+.details-bt {
+  width: 50%;
+  height: 100%;
+  margin: 150px 80px;
 }
 
 
-.code{
-    font-family: 'La Belle Aurore Regular';
-    color: #515152;
-    font-size: 22px;
-    margin:40px;
-    position: relative;
+.details-bt h1 {
+  color: #05fdd8;
+  font-size: 65px;
+  position: relative;
 }
 
-.code::after{
-    content: "<body>";
-    color: #515152;
-    position: absolute;
-    top: 25px;
-    left: 20px;
+.details-bt h1::before {
+  content: "<h1>";
+  color: #515152;
+  position: absolute;
+  top: -40px;
+  left: -25px;
+  font-family: "La Belle Aurore Regular";
+  font-size: 22px;
+}
+.details-bt h1::after {
+  content: "</h1>";
+  color: #515152;
+  position: absolute;
+  font-family: "La Belle Aurore Regular";
+  font-size: 22px;
+  left: -25px;
+  bottom: -50px;
 }
 
-.sections-abt{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    margin: 100px 0px;
-}
-@media only screen and (max-width: 720px) {
-    .bt-hero{
-        width: 100%;
-        position: absolute;
-        right: 0;
-        min-height: 100vh;
-    }
-    .sections{
-        flex-direction: column;
-    }
-}
-.details-bt{
-    width: 50%;
-    height: 100%;
-    margin: 150px 80px;
+.details-bt h1 {
+  line-height: 110%;
 }
 
-.details-bt h1{
-    color: #05FDD8;
-    font-size: 65px;
-    position: relative;
+.AboutDesc h1 {
+  margin: 0px;
 }
 
+.AboutDesc {
+  width: 50%;
+  height: 100%;
+  color: white;
 
-
-.details-bt h1::before{
-    content: "<h1>";
-    color: #515152;
-    position: absolute;
-    top: -40px;
-    left: -25px;
-    font-family: 'La Belle Aurore Regular';
-    font-size: 22px;
-}
-.details-bt h1::after{
-    content: "</h1>";
-    color: #515152;
-    position: absolute;
-    font-family: 'La Belle Aurore Regular';
-    font-size: 22px;
-    left: -25px;
-    bottom: -50px;
+  font-family: "La Belle Aurore Regular";
 }
 
-.details-bt h1{
-    line-height: 110%;
+.AboutDesc {
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.AboutDesc h1{
-    margin: 0px;
+.skill {
+  margin-bottom: 20px;
 }
 
-.AboutDesc{
-    width: 50%;
-    height: 100%;
-    color: white;
-    
-    font-family: 'La Belle Aurore Regular';
+.skill p {
+  margin-bottom: 13px;
 }
 
-.AboutDesc
-{
-    font-weight: 600;
-    font-size: 16px;
+.bar-progress-front {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: #05fdd8;
 }
 
-
-
-.skill{
-    margin-bottom: 20px;
+.bar-progress-back {
+  position: absolute;
+  width: 76%;
+  height: 100%;
+  background: #fd2155;
 }
 
-.skill p{
-    margin-bottom: 13px;
+.bar-progress-react {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  background: #ff5adb;
 }
 
-
-
-.bar-progress-front{
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    background: #05FDD8;
+.bar-progress-ui {
+  position: absolute;
+  width: 84%;
+  height: 100%;
+  background: #f6d68d;
 }
 
-.bar-progress-back{
-    position: absolute;
-    width: 76%;
-    height: 100%;
-    background: #FD2155;
+.bar-progress-java {
+  position: absolute;
+  width: 84%;
+  height: 100%;
+  background: #15ff00;
 }
 
-
-.bar-progress-react{
-    position: absolute;
-    width: 65%;
-    height: 100%;
-    background: #ff5adb;
+.bar-progress-php {
+  position: absolute;
+  width: 84%;
+  height: 100%;
+  background: #ff4800;
 }
 
-.bar-progress-ui{
-    position: absolute;
-    width: 84%;
-    height: 100%;
-    background: #F6D68D;
+.bar-progress-c {
+  position: absolute;
+  width: 84%;
+  height: 100%;
+  background: #0004ff;
 }
 
-.bar-progress-java{
-    position: absolute;
-    width: 84%;
-    height: 100%;
-    background: #15ff00;
+.bar-progress-cpp {
+  position: absolute;
+  width: 84%;
+  height: 100%;
+  background: #ffffff;
 }
 
-.bar-progress-php{
-    position: absolute;
-    width: 84%;
-    height: 100%;
-    background: #ff4800;
+.skills-paragraph {
+  color: #8d8d8d;
+  margin-top: 90px;
+  font-size: 19px;
+  letter-spacing: 1.5px;
+  position: relative;
+  font-family: "poppins";
+  pointer-events: none;
+  width: 80%;
 }
 
-.bar-progress-c{
-    position: absolute;
-    width: 84%;
-    height: 100%;
-    background: #0004ff;
+.skills-paragraph::before {
+  content: "<p>";
+  color: #515152;
+  position: absolute;
+  font-family: "La Belle Aurore Regular";
+  font-size: 22px;
+  top: -40px;
+  left: -25px;
 }
 
-
-.bar-progress-cpp{
-    position: absolute;
-    width: 84%;
-    height: 100%;
-    background: #ffffff;
+.skills-paragraph::after {
+  content: "</p>";
+  color: #515152;
+  position: absolute;
+  font-family: "La Belle Aurore Regular";
+  font-size: 22px;
+  left: -25px;
+  bottom: -50px;
 }
 
-
-.skills-paragraph{
-    color: #8d8d8d;
-    margin-top: 90px;
-    font-size: 19px;
-    letter-spacing: 1.5px;
-    position: relative;
-    font-family: "poppins";
-    pointer-events: none;
-    width: 80%;
+.title_underline {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #05fdd8;
 }
 
-
-.skills-paragraph::before{
-    content: "<p>";
-    color: #515152;
-    position: absolute;
-    font-family: 'La Belle Aurore Regular';
-    font-size: 22px;
-    top: -40px;
-    left: -25px;
-}
-
-
-
-.skills-paragraph::after{
-    content: "</p>";
-    color: #515152;
-    position: absolute;
-    font-family: 'La Belle Aurore Regular';
-    font-size: 22px;
-    left: -25px;
-    bottom: -50px;
-}
-
-
-
-
-
-.title_underline{
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    background: #05FDD8;
-}
-
-
-.bar{
-    height: 2px;
-    width: 90%;
-    background: rgb(77, 77, 77);
-    position: relative;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.bar {
+  height: 2px;
+  width: 90%;
+  background: rgb(77, 77, 77);
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .abt-details ul li {
-    color: #8d8d8d;
-    font-size: 18px;
-    font-weight: 500;
-    margin:12px;
-    margin-left:  40px;
-
+  color: #8d8d8d;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 12px;
+  margin-left: 40px;
 }
+@media only screen and (max-width: 720px) {
+    .bt-hero {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      min-height: 100vh;
+    }
+    .sections {
+      margin: 0px;
+      flex-direction: column;
+  
+    }
+  
+    .sections-abt {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin:0px;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .details-bt {
+      width: 80%;
+      height: 100%;
+      margin: 150px 80px;
+    }
+    .details-bt h1 {
+      color: #05fdd8;
+      font-size: 55px;
+      position: relative;
+    }
+    .skills-paragraph{
+        width: 90%;
+    }
+    .skills-paragraph span{
+        font-size: 17px;
+    }
+    .AboutDesc{
+        margin-left: 60px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+  }

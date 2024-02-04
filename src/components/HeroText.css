@@ -90,6 +90,17 @@
   .gray-text{
     font-size: 15px;
   }
+  
+
+  .gray-text::after{
+    content: "</p>";
+    color: #515152;
+    position: absolute;
+    font-family: 'La Belle Aurore Regular';
+    font-size: 22px;
+    left: -30px;
+    top: 40px;
+}
 }
 
 

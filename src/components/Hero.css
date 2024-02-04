@@ -43,9 +43,10 @@
 
 @media only screen and (max-width: 720px) {
     .hero{
-        width: 100%;
+        width: 100vw;
         position: absolute;
         right: 0;
+        overflow: hidden;
         
     }
     .all{
