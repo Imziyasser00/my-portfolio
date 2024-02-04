@@ -1,9 +1,19 @@
 // src/data/projectsData.js
 const projects = [
     {
-      title: 'Project 1',
-      description: 'Description for Project 1.',
-      image: 'project1.jpg',
+      title: "Let's Do It",
+      description: 'ThreeJs T-shirt custom Designer.',
+      image: './src/components/assets/ThreeJs.png',
+    },
+    {
+      title: "Let's Do It",
+      description: 'ThreeJs T-shirt custom Designer.',
+      image: './assets/ThreeJs.png',
+    },
+    {
+      title: "Let's Do It",
+      description: 'ThreeJs T-shirt custom Designer.',
+      image: './assets/ThreeJs.png',
     },
     {
       title: 'Project 2',
