@@ -24,6 +24,30 @@ const projects = [
       description: 'Description for Project 2.',
       image: 'https://blog.hubspot.com/hs-fs/hubfs/free-website-builders_1.webp?width=650&height=412&name=free-website-builders_1.webp',
     },
+    {
+      id:5,
+      title: 'Project 2',
+      description: 'Description for Project 2.',
+      image: 'https://blog.hubspot.com/hs-fs/hubfs/free-website-builders_1.webp?width=650&height=412&name=free-website-builders_1.webp',
+    },
+    {
+      id:6,
+      title: 'Project 2',
+      description: 'Description for Project 2.',
+      image: 'https://blog.hubspot.com/hs-fs/hubfs/free-website-builders_1.webp?width=650&height=412&name=free-website-builders_1.webp',
+    },
+    {
+      id:7,
+      title: 'Project 2',
+      description: 'Description for Project 2.',
+      image: 'https://blog.hubspot.com/hs-fs/hubfs/free-website-builders_1.webp?width=650&height=412&name=free-website-builders_1.webp',
+    },
+    {
+      id:8,
+      title: 'Project 2',
+      description: 'Description for Project 2.',
+      image: 'https://blog.hubspot.com/hs-fs/hubfs/free-website-builders_1.webp?width=650&height=412&name=free-website-builders_1.webp',
+    },
     // Add more projects as needed
   ];
   

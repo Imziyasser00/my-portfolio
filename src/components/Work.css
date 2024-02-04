@@ -12,5 +12,6 @@
     margin: 40px 50px;
     column-count: 4;
     gap: 25px;
+    height: 100vh;
 }
 
