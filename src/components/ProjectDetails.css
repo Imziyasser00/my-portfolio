@@ -1,0 +1,250 @@
+.prjct_dtls_container{
+    width: calc(100% - 130px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 100vh;
+    margin-top: 0px;
+}
+
+.content_prjct{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prjct_title{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: coolvetica;
+    color: white;
+    font-size: 90px;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.project_img{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.project_technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+  }
+  
+  .technology-item {
+    background-color: #FD2155; 
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  
+  .project_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .go_back{
+    background-color: #FD2155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f0f0f0;
+  }
+
+  .tech_desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .tech_desc_content{
+    width: 80%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .project_description{
+    margin: 20px 10px;
+    font-size: 17px;
+  }
+
+
+  .project_description strong{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .project_technologies{
+    margin: 20px 10px;
+    font-size: 17px;
+  }
+
+  
+  .project_technologies strong{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .key_btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #f0f0f0;
+  }
+
+  .key_btns_content{
+    width: 80%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .key_features{
+    margin: 20px 10px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .key_features strong{
+    font-size: 28px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+
+.git_live_icons{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitlive{
+    margin: 20px;
+}
+
+
+
+.check_icon{
+    color: greenyellow;
+    font-size: 19px;
+    margin: 0px 10px 0px 0px;
+}
+
+.key-item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+  
+
+
+
+@media screen and (max-width: 1450px){
+    .git_live_icons{
+        width: 500px;
+    }
+    .gitlive{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1125px){
+
+    .tech_desc_content{
+        flex-direction: column;
+    }
+
+    .project_description{
+        margin: 40px;
+    }
+
+    .key_btns_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .key_features{
+        flex-direction: row;
+        margin: 20px 30px;
+    }
+
+    .card_btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .project_img{
+        width: 80%;
+    }
+
+
+    
+
+}
+
+@media screen and (max-width: 720px){
+
+    .prjct_dtls_container{
+        width: 100%;
+    }
+
+    .prjct_title{
+        font-size: 60px;
+    }
+    
+
+    .key_features{
+        flex-direction: column;
+        margin: 20px 30px;
+        width: 60%;
+    }
+
+}

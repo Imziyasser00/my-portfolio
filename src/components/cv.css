@@ -1,0 +1,24 @@
+
+.fixed-cv-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #ff00c8; 
+    color: #212121; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+.fixed-cv-button a{
+    text-decoration: none;
+    color: #212121;
+}
+  
+  .fixed-cv-button:hover {
+    background-color: #00d9ff; 
+  }
+  

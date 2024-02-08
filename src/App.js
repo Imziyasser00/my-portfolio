@@ -2,9 +2,9 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './routes/Home'
 import About from './routes/About';
 import Skills from './routes/Skills';
-import Work from './routes/Work';
 import Contact from './routes/Contact';
-import ProjectDetails from './routes/ProjectsDetails';
+import Work from './routes/Work';
+import Project from './routes/Project';
  
 function App() {
     return (
@@ -13,9 +13,9 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/skills' element={<Skills />} />
-                <Route path='/work' element={<Work />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path="/project-details" component={ProjectDetails} />
+                <Route path='/Work' element={<Work />} />
+                <Route path="/project/:projectId" element={<Project />} />
             </Routes>
         </>
     );

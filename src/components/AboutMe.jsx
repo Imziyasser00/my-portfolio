@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
 import { motion, useAnimation } from "framer-motion";
+import Cv from "./Cv";
 const AboutMe = () => {
   const controls = useAnimation();
 
@@ -33,6 +34,7 @@ const AboutMe = () => {
 
   return (
     <div className="bt-hero">
+      <Cv />
       <span className="code">&lt;html&gt;</span>
       <motion.div
         className="sections-abt"

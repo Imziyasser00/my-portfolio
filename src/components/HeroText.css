@@ -123,12 +123,9 @@
     cursor: pointer;
     width: 200px;
     transition: 1s ease-out;
-  }
-  .btn span {
-    font-family: "Roboto", sans-serif;
-    position: relative;
     z-index: 10;
   }
+
   .btn:before, .btn:after {
     content: "";
     position: absolute;
@@ -159,4 +156,5 @@
 
   .btn:hover{
     color: black;
+    z-index: 2000;
   }

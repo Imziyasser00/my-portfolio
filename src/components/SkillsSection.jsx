@@ -1,6 +1,7 @@
 import React from "react";
 import "./skills.css";
 import { motion } from "framer-motion";
+import Cv from "./Cv";
 
 const SkillsSection = () => {
   const text =
@@ -130,6 +131,7 @@ const SkillsSection = () => {
           </div>
         </div>
       </motion.div>
+      <Cv />
     </div>
   );
 };

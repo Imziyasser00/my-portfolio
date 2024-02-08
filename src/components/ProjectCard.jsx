@@ -1,41 +1,43 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import './projectCard.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { motion } from "framer-motion";
+import "./ProjectCard.css";
+import { Link } from "react-router-dom";
+import { IoMdArrowDroprightCircle } from "react-icons/io";
+import Cv from "./Cv";
 
-const ProjectCard = (props) => {
-  return (
-    <motion.div className='card'
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }}
-    whileHover={{
-        scale: 1.1,
-        transition: { duration: 0.5 },
-      }}
-      key={props.id}
+const ProjectCard = ({ id,title, image, githubLink, liveDemoLink }) => {
+  
+  
+    return (
+    <motion.article className="project_card" 
     >
-         <Link key={props.message.id} to={`/project-details?project=${props.message.id}`}>
-        <motion.div className='card-content'
-        >
-           
-                <motion.img src={props.message.image} alt={props.message.name} width={380}/>
-            
-            <motion.div className='prjctTitle'
-            >
-                <motion.h2
-                        initial={{opacity: 0}}
-                        animate={{opacity: 100}}
-                        transition={{delay:3}}
-                 >
-                    {props.message.title}
-                </motion.h2>
-            </motion.div>
-            
+      <motion.div className="project_image">
+        <motion.img src={image} alt={title} />
+      </motion.div>
+      <motion.h3 className="project_title">{title}</motion.h3>
+      <motion.div className="card_btns">
+        <motion.div className="git_live">
+          <motion.a href={githubLink} className="btn_prjct"
+                    whileHover={{ backgroundColor: "#FD2155", color: "white",letterSpacing: "3px",}}
+                    transition={{duration : 0.4}}
+          >
+            Github
+          </motion.a>
+          <motion.a href={liveDemoLink} className="btn_prjct live"
+                    whileHover={{ backgroundColor: "#05FDD8", color: "rgb(43, 43, 43)",letterSpacing: "0.5px",}}
+                    transition={{duration : 0.4}}
+          >
+            LiveDemo
+          </motion.a>
         </motion.div>
+        
+        <Link to={`/project/${id}`}>
+          <IoMdArrowDroprightCircle className="icon_more" />
         </Link>
-    </motion.div>
-  )
-}
+      </motion.div>
+      <Cv />
+    </motion.article>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

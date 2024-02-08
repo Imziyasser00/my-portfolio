@@ -3,8 +3,8 @@ import './Hero.css'
 import HeroText from './HeroText'
 import useMeasure from 'react-use-measure'
 import { useTrail, animated } from '@react-spring/web'
-
 import styles from './styles.module.css'
+import Cv from './Cv'
 
 const fast = { tension: 1200, friction: 50 }
 const slow = { mass: 10, tension: 200, friction: 50 }
@@ -46,6 +46,7 @@ const Hero = () => {
       
     <span className='code'>&lt;html&gt;</span>
     <HeroText/> 
+    <Cv />
 
     </div>
   )

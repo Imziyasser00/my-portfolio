@@ -1,0 +1,54 @@
+
+.work-hero{
+    width: calc(100% - 130px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 100vh;
+    margin-top: 0px;
+}
+
+.work_container{
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+
+
+@media screen and (max-width: 1450px){
+
+    .work_container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1125px){
+
+    .work_container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 720px){
+
+    .work-hero{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+
+
+    .work_container{
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+    }
+
+}
