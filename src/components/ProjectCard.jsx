@@ -20,18 +20,20 @@ const ProjectCard = ({ id,title, image, githubLink, liveDemoLink }) => {
           <motion.a href={githubLink} className="btn_prjct"
                     whileHover={{ backgroundColor: "#FD2155", color: "white",letterSpacing: "3px",}}
                     transition={{duration : 0.4}}
+                    target="blank"
           >
             Github
           </motion.a>
           <motion.a href={liveDemoLink} className="btn_prjct live"
                     whileHover={{ backgroundColor: "#05FDD8", color: "rgb(43, 43, 43)",letterSpacing: "0.5px",}}
                     transition={{duration : 0.4}}
+                    target="blank"
           >
             LiveDemo
           </motion.a>
         </motion.div>
         
-        <Link to={`/project/${id}`}>
+        <Link to={`/project/${id}`} >
           <IoMdArrowDroprightCircle className="icon_more" />
         </Link>
       </motion.div>

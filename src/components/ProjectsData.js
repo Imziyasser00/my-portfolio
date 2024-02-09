@@ -2,13 +2,19 @@
 const projects = [
     {
       id:1,
-      title: "Let's Do It",
-      description: 'ThreeJs T-shirt custom Designer.',
-      image: 'https://blog.hubspot.com/hs-fs/hubfs/free-website-builders_1.webp?width=650&height=412&name=free-website-builders_1.webp',
-      liveDemoLink: "",
-      githubLink: "",
+      title: "Tapis Rouges",
+      description: "Developed a comprehensive restaurant website as part of a front-end internship, showcasing my skills in HTML, CSS, and JavaScript. The website consists of seven pages, each serving a unique purpose to enhance the user experience.",
+      image:  require('./images/Tapis_rouges.png'),
+      liveDemoLink: "https://agitated-swanson-b1aba5.netlify.app/",
+      githubLink: "https://github.com/Imziyasser00/Tapis-Rouges",
       technologies: ["HTML","CSS","JAVASCRIPT"],
-      KeyFeatures: ["User Authentication","Real-time Updates","Search Functionality","Responsive Design","Integration with APIs"],
+      KeyFeatures: [
+        "Engaging User Interface",
+        "Online Ordering Functionality",
+        "Team Showcase",
+        "Interactive Gallery",
+        "Contact Form"
+      ],
     },{
       id:2,
       title: "Let's Do It",
