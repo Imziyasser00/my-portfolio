@@ -1,4 +1,4 @@
-import ReBsInstagramact, { useState } from 'react'
+import  { useState } from 'react'
 import { Link ,NavLink } from 'react-router-dom'
 import  "./Navbar.css"
 import {IoLogoWhatsapp} from "react-icons/io"
@@ -7,7 +7,7 @@ import {GiHamburgerMenu} from "react-icons/gi"
 import {MdClose} from "react-icons/md"
 import {AiFillInstagram} from "react-icons/ai"
 import logo_details from '../assets/logo_details.svg'
-import { motion } from "framer-motion"
+
 
 const Navbar = () => {
   const [toggle, settoggle] = useState(false)
