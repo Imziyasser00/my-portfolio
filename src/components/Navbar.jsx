@@ -52,13 +52,13 @@ const Navbar = () => {
       </div>
 
       <div className="socials">
-        <a href='https://wa.me/212702703561' target="_blank">
+        <a href='https://wa.me/33605576074' target="_blank">
         <IoLogoWhatsapp />
         </a>
-        <a href='mailto: imziyasser00@gmail.com' target="_blank">
+        <a href='mailto: contact@yassirimzi.com' target="_blank">
         <SiGmail />
         </a>
-        <a href='https://www.instagram.com/yass_ser_/' target="_blank">
+        <a href='https://www.instagram.com/yass_sir__/' target="_blank">
         <AiFillInstagram />
         </a>
       </div>

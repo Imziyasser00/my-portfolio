@@ -1,6 +1,7 @@
 
 .work-hero{
     width: calc(100% - 130px);
+
     position: absolute;
     right: 0;
     top: 0;
@@ -41,7 +42,7 @@
 
     .work-hero{
         width: 100vw;
-        overflow: hidden;
+        margin-bottom: 100px ;
     }
 
 
