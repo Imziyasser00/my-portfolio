@@ -117,8 +117,8 @@ const AboutMe = () => {
 
               <div className="abt-details">
                 <ul>
-                  <li><p> - 💻   Java | C++ | C | MySQL</p></li>
-                  <li><p> - 🌐   HTML | CSS | JavaScript | Bootstrap | ReactJS | PHP</p></li>
+                  <li><p> - 💻   Java | C++ | C | MySQL | MongoDB</p></li>
+                  <li><p> - 🌐   NextJs | Typescript | JavaScript | tailwind | ReactJS | PHP</p></li>
                 </ul>
               </div>
             </motion.h2>
@@ -133,7 +133,7 @@ const AboutMe = () => {
 
               <div className="abt-details">
                 <ul>
-                  <li><p>🔧   MERN Stack | Type script</p></li>
+                  <li><p>🔧  React Native </p></li>
                 </ul>
               </div>
             </motion.h2>

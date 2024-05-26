@@ -55,7 +55,7 @@ const projects = [
         "Integration with a weather API (using Axios)"
       ],
     },{    
-      id:4,
+      id: 4,
       title: "AI Article Summarizer",
       description: 'Unlock the power of instant comprehension with our Summarizer. Effortlessly distill lengthy content into concise summaries, saving you time and delivering the essence of information. Simplify complexity and stay informed at a glance.',
       image: require('./images/summarizer.png'),
@@ -64,6 +64,63 @@ const projects = [
       technologies : ["React", "@mantine/core", "@mantine/hooks", "@reduxjs/toolkit", "react-icons", "react-loader-spinner", "react-redux"],
       KeyFeatures: ["Real-time Updates", "Search Functionality", "Responsive Design", "Integration with APIs"],
     },
+    {    
+      id: 5,
+      title: "Car Showcase",
+      description: 'Car Showcase is a cutting-edge Next.js project that redefines the car renting experience. Browse a curated selection of top-tier vehicles, enjoy seamless navigation, and effortlessly book your dream car for an unforgettable journey. Elevate your travel experience with Car Showcase – where luxury meets convenience.',
+      image: require('./images/Car-showasing.png'),
+      liveDemoLink: "https://65d213448f9c515cde8e69b8--car-showcasing.netlify.app/",
+      githubLink: "https://github.com/YassirImzi/car-showcasing-app",
+      technologies : ["headlessui", "next", "react", "react-dom", "sharp", "typescript", "tailwindcss", "typescript"],
+      KeyFeatures: ["Real-time Updates", "Search Functionality", "Responsive Design", "Integration with APIs"
+    ],
+    },
+    {
+      id: 6,
+      title: "PopCorn",
+      description: "Discover your next favorite movie with PopCorn! This website recommends movies through an infinite scroll, providing brief details, posters, ratings, and release dates. Immerse yourself in the world of cinema and find the perfect film for your mood.",
+      image: require('./images/popcorn.png'), 
+      liveDemoLink: "https://65d63b63b1e8efe586808cf6--thriving-cocada-164f97.netlify.app/",
+      githubLink: "https://github.com/YassirImzi/Films-Listing-Website",
+      technologies: ["React", "Framer Motion", "Material-UI", "API", "Infinite Scroll"],
+      KeyFeatures: [
+        "Infinite Scroll of Movie Recommendations",
+        "Short Movie Briefs",
+        "Poster Display",
+        "Rating Information",
+        "Release Date",
+      ],
+    },
+    {
+      id: 7,
+      title: "Massage Gun",
+      description: "A product presentation website for a massage vibrator designed for athletes. Implemented clean and elegant code using React, Tailwind CSS, and Framer Motion.",
+      image: require('./images/massage-gun.png'),
+      liveDemoLink: "https://65e05aba423445ede947e7e5--glistening-cuchufli-566b71.netlify.app/", 
+      githubLink: "https://github.com/YassirImzi/Product-Website", 
+      technologies: ["React", "Tailwind CSS", "Framer Motion"],
+      KeyFeatures: [
+        "Clean and Elegant Design",
+        "Product Presentation",
+        "Responsive UI",
+        "speed Optimisation",
+      ],
+    },
+    {
+      id: 8,
+      title: "E-scooter Marketing Website",
+      description: "Developed a marketing website for promoting e-scooters, leveraging ReactJS for frontend development and Tailwind CSS for styling. Implemented user authentication using Cleerk to provide secure access to exclusive content and features.",
+      image: require('./images/E-scooter.png'),
+      liveDemoLink: "https://6607ff509a3fbb9a421d49b9--dynamic-platypus-92be49.netlify.app/",
+      githubLink: "https://github.com/Imziyasser00/E-Scooter-Marketing-Website",
+      technologies: ["React", "Tailwind CSS", "Clerk", "Vite"],
+      KeyFeatures: [
+        "User Authentication with Cleerk",
+        "Promotional Content Display",
+        "Responsive Design",
+      ],
+    },
+    
    
   ];
   

@@ -21,7 +21,7 @@
     font-family: coolvetica;
     color: white;
     font-size: 90px;
-    pointer-events: none;
+    pointer-events: none; 
     display: flex;
     justify-content: center;
 }
@@ -202,6 +202,7 @@
 
     .project_description{
         margin: 40px;
+        width: 100% ;
     }
 
     .key_btns_content{
@@ -226,6 +227,9 @@
         width: 80%;
     }
 
+    .prjct_title{
+      font-size: 60px;
+    }
 
     
 
@@ -238,14 +242,17 @@
     }
 
     .prjct_title{
-        font-size: 60px;
+        font-size: 40px;
     }
+    .gitlive{
+      width: 100%;
+  }
     
 
     .key_features{
         flex-direction: column;
         margin: 20px 30px;
-        width: 60%;
+        width: 100%;
     }
 
 }

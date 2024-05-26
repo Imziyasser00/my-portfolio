@@ -42,24 +42,24 @@ const SkillsSection = () => {
         </div>
         <div className="skills">
           <div className="skill">
-            <p>Front-End</p>
+            <p>Next.Js 14</p>
             <div className="bar">
               <motion.div
                 initial={{ width: 0 }}
-                animate={{ width: "90%" }}
+                animate={{ width: "70%" }}
                 transition={{ delay: 1, duration: 1 }}
                 className="bar-progress-front"
               ></motion.div>
             </div>
           </div>
           <div className="skill">
-            <p>Back-End</p>
+            <p>Typescript</p>
             <div className="bar">
               <motion.div
                 initial={{ width: 0 }}
-                animate={{ width: "76%" }}
+                animate={{ width: "69%" }}
                 transition={{ delay: 1.2, duration: 1 }}
-                className="bar-progress-back"
+                className="bar-progress-c"
               ></motion.div>
             </div>
           </div>
@@ -75,12 +75,24 @@ const SkillsSection = () => {
             </div>
           </div>
           <div className="skill">
-            <p>UI Design</p>
+            <p>MongoDB / SQL</p>
+            <div className="bar">
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "76%" }}
+                transition={{ delay: 1.6, duration: 1 }}
+                className="bar-progress-back"
+              ></motion.div>
+            </div>
+          </div>
+          
+          <div className="skill">
+            <p>UI / UX Design</p>
             <div className="bar">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "84%" }}
-                transition={{ delay: 1.6, duration: 1 }}
+                transition={{ delay: 1.8, duration: 1 }}
                 className="bar-progress-ui"
               ></motion.div>
             </div>
@@ -91,7 +103,7 @@ const SkillsSection = () => {
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "75%" }}
-                transition={{ delay: 1.8, duration: 1 }}
+                transition={{ delay: 2, duration: 1 }}
                 className="bar-progress-java"
               ></motion.div>
             </div>
@@ -102,30 +114,31 @@ const SkillsSection = () => {
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "86%" }}
-                transition={{ delay: 2, duration: 1 }}
+                transition={{ delay: 2.2, duration: 1 }}
                 className="bar-progress-php"
               ></motion.div>
             </div>
           </div>
           <div className="skill">
-            <p>C</p>
-            <div className="bar">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "69%" }}
-                transition={{ delay: 2.2, duration: 1 }}
-                className="bar-progress-c"
-              ></motion.div>
-            </div>
-          </div>
-          <div className="skill">
-            <p>C++</p>
+            <p>C / C++</p>
             <div className="bar">
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "81%" }}
                 transition={{ delay: 2.4, duration: 1 }}
                 className="bar-progress-cpp"
+              ></motion.div>
+            </div>
+          </div>
+
+          <div className="skill">
+            <p>TailwindCSS</p>
+            <div className="bar">
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "85%" }}
+                transition={{ delay: 2.6, duration: 1 }}
+                className="bar-progress-tailwind-css"
               ></motion.div>
             </div>
           </div>

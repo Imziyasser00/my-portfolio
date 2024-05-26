@@ -171,6 +171,13 @@
     background: #0004ff;
 }
 
+.bar-progress-tailwind-css{
+    position: absolute;
+    width: 84%;
+    height: 100%;
+    background: #7fff7a;
+}
+
 
 .bar-progress-cpp{
     position: absolute;

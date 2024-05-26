@@ -10,6 +10,7 @@ import Cv from './Cv';
 
 const ProjectDetails = () => {
   const { projectId } = useParams(); 
+  console.log('projectId:', projectId);
   const navigate = useNavigate();
   console.log('projectId:', projectId);
   const animationVariants = {
